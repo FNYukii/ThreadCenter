@@ -10,7 +10,8 @@ class CommentFactory extends Factory
     {
         return [
             'threadId' => 99,
-            'text' => $this->faker->realText(20)
+            'displayName' => $this->faker->name(1),
+            'text' => $this->faker->sentence(10)
         ];
     }
 }
