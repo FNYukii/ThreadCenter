@@ -10,7 +10,7 @@ return new class extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->int('threadId');
+            $table->integer('threadId');
             $table->string('displayName');
             $table->string('text');
             $table->timestamps();
