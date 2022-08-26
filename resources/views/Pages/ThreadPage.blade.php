@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../styles/Style.css">
+  <link rel="stylesheet" href="../styles/ThreadPage.css">
 </head>
 <body>
   
@@ -24,6 +25,9 @@
       </div>
 
       <!-- Comments Section -->
+      <div class="comment-container">
+
+      </div>
     </div>
   </main>
 
