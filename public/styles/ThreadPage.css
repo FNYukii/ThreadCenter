@@ -8,6 +8,10 @@
   margin-bottom: 24px;
 }
 
+.comment:last-child {
+  margin-bottom: 0;
+}
+
 .comment .display-name {
   font-weight: bold;
 }
