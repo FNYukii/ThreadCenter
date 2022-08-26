@@ -31,6 +31,12 @@ main {
   display: none;
 }
 
+@media (max-width: 800px) {
+  .modal {
+    width: 90%;
+  }
+}
+
 .modal input {
   display: block;
   width: 100%;
