@@ -26,7 +26,7 @@
           <input placeholder="Text" name="text"/>
 
           <div class="button-container">
-            <button type="submit">Create</button>
+            <button type="submit">Add</button>
           </div>
         </form>
       </div>
