@@ -61,6 +61,7 @@ footer .copyright {
 
 /* Each Pages */
 main {
+  background-color: #ddd;
   padding-top: 32px;
   padding-bottom: 64px;
 }

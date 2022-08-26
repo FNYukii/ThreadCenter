@@ -1,6 +1,3 @@
-main {
-  background-color: #ddd;
-}
 
 /* Add Thread Modal */
 .modal-shadow {
@@ -78,6 +75,7 @@ main {
 
 /* Thread Cards Section */
 .thread-card-container {
+  margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -86,7 +84,7 @@ main {
 .thread-card {
   width: 32%;
   height: 170px;
-  margin-top: 16px;
+  margin-bottom: 16px;
   background-color: #fff;
   padding: 16px;
 
