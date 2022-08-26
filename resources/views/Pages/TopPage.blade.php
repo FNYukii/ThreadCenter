@@ -13,6 +13,16 @@
 
   <div class="large-container">
     <h2>Threads</h2>
+
+    <div class="thread-card-container">
+      @foreach($threads as $thread)
+        <div class="thread-card">
+          <p class="title">{{ $thread->title}}</p>
+          <p class="created-at">{{ $thread->created_at }}</p>
+        </div>
+      @endforeach
+    </div>
+    
   </div>
   
 </body>

@@ -2,6 +2,5 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('Pages.TopPage');
-});
+Route::get('/', \App\Http\Controllers\TopPageController::class)
+->name('topPage');
