@@ -14,12 +14,28 @@
 
   <main>
     <div class="large-container">
+
+      <!-- Add Thread Modal -->
+      <div class="modal-shadow" id="modalShadow"></div>
+      <div class="modal" id="modal">
+        <h3>New thread</h3>
+        <form>
+          <input placeholder="Thread title" name="title"/>
+
+          <div class="button-container">
+            <button type="submit">Create</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Title Bar -->
       <div class="title-bar">
         <h2>Threads</h2>
 
-        <button>New Thread</button>
+        <button id="openButton">New Thread</button>
       </div>
 
+      <!-- Thread Card Container -->
       <div class="thread-card-container">
         @foreach($threads as $thread)
           <div class="thread-card">
@@ -28,12 +44,13 @@
             <p class="created-at">{{ $thread->created_at }}</p>
           </div>
         @endforeach
-
       </div>
       
     </div>
 
   </main>
+
+  <script src="scripts/Script.js"></script>
 
 </body>
 </html>
