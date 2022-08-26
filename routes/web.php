@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Top Page
 Route::get('/', \App\Http\Controllers\TopPageController::class)
 ->name('topPage');
 
