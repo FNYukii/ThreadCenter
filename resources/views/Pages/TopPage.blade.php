@@ -14,12 +14,24 @@
 
   <main>
     <div class="large-container">
+
+      <!-- Add Thread Modal -->
+      <div class="modal-shadow"></div>
+      <div class="modal">
+        <form>
+          <input placeholder="スレッドタイトル" name="title"/>
+          <button type="submit">Create</button>
+        </form>
+      </div>
+
+      <!-- Title Bar -->
       <div class="title-bar">
         <h2>Threads</h2>
 
         <button>New Thread</button>
       </div>
 
+      <!-- Thread Card Container -->
       <div class="thread-card-container">
         @foreach($threads as $thread)
           <div class="thread-card">
@@ -28,7 +40,6 @@
             <p class="created-at">{{ $thread->created_at }}</p>
           </div>
         @endforeach
-
       </div>
       
     </div>
