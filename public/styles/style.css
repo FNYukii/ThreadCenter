@@ -117,6 +117,22 @@ main {
   color: #aaa;
 }
 
+.modal textarea {
+  width: 100%;
+  margin-top: 16px;
+  padding: 8px;
+
+  font-size: medium;
+  font-family: inherit;
+
+  border: 1px solid #aaa;
+  resize: none;
+}
+
+.modal textarea::placeholder {
+  color: #aaa;
+}
+
 .modal .button-container {
   display: flex;
   justify-content: flex-end;

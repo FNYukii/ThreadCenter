@@ -23,7 +23,7 @@
           @csrf
           <input type="hidden" name="threadId" value="{{ $thread->id }}"/>
           <input placeholder="Display name" name="displayName"/>
-          <input placeholder="Text" name="text"/>
+          <textarea placeholder="Text" name="text" rows="5"></textarea>
 
           <div class="button-container">
             <button type="submit">Add</button>
