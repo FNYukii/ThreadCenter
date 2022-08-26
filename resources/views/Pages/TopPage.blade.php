@@ -9,6 +9,8 @@
 </head>
 <body>
   
+  <x-header/>
+
   <div class="large-container">
     <h2>Threads</h2>
   </div>
