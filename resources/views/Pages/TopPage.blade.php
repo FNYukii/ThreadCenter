@@ -45,6 +45,8 @@
             <p class="created-at">{{ $thread->created_at }}</p>
           </div>
         @endforeach
+
+        <div class="thread-card invisible"></div>
       </div>
       
     </div>

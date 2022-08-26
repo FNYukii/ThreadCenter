@@ -118,3 +118,7 @@ main {
 .thread-card .created-at {
   color: #777;
 }
+
+.invisible {
+  opacity: 0;
+}
