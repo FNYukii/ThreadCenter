@@ -56,6 +56,5 @@
   <x-footer/>
 
   <script src="scripts/Script.js"></script>
-
 </body>
 </html>
