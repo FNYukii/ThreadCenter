@@ -19,8 +19,9 @@
       <div class="modal-shadow" id="modalShadow"></div>
       <div class="modal" id="modal">
         <h3>New comment</h3>
-        <form action="" method="post">
+        <form action="{{ route('createComment') }}" method="post">
           @csrf
+          <input type="hidden" name="threadId" value="{{ $thread->id }}"/>
           <input placeholder="Display name" name="displayName"/>
           <input placeholder="Text" name="text"/>
 
