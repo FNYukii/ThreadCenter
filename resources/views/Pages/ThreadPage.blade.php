@@ -14,11 +14,16 @@
   <main>
     <div class="large-container">
 
+      <!-- Add Comment Modal -->
+
+      <!-- Title Bar -->
       <div class="title-bar">
         <h2>{{ $thread->title }}</h2>
 
         <button>New Comment</button>
       </div>
+
+      <!-- Comments Section -->
     </div>
   </main>
 
