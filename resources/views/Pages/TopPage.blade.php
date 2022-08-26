@@ -18,6 +18,7 @@
       <!-- Add Thread Modal -->
       <div class="modal-shadow"></div>
       <div class="modal">
+        <h3>New thread</h3>
         <form>
           <input placeholder="Thread title" name="title"/>
 
