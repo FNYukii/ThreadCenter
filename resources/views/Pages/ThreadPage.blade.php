@@ -13,7 +13,7 @@
 
   <main>
     <div class="large-container">
-      <h2>Thread</h2>
+      <h2>{{ $thread->title }}</h2>
     </div>
   </main>
 
