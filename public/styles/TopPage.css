@@ -2,7 +2,9 @@ main {
   background-color: #ddd;
 }
 
-/* Thread card container */
+/* Title Bar Section */
+
+/* Thread Cards Section */
 .thread-card-container {
   display: flex;
   flex-wrap: wrap;

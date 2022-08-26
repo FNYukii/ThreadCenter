@@ -31,3 +31,8 @@ header .logo {
   text-decoration: none;
   color: #000;
 }
+
+/* Each Pages */
+main {
+  padding-top: 16px;
+}
