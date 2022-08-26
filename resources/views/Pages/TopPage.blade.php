@@ -16,8 +16,8 @@
     <div class="large-container">
 
       <!-- Add Thread Modal -->
-      <div class="modal-shadow"></div>
-      <div class="modal">
+      <div class="modal-shadow" id="modalShadow"></div>
+      <div class="modal" id="modal">
         <h3>New thread</h3>
         <form>
           <input placeholder="Thread title" name="title"/>
@@ -32,7 +32,7 @@
       <div class="title-bar">
         <h2>Threads</h2>
 
-        <button>New Thread</button>
+        <button id="openButton">New Thread</button>
       </div>
 
       <!-- Thread Card Container -->
@@ -49,6 +49,8 @@
     </div>
 
   </main>
+
+  <script src="scripts/Script.js"></script>
 
 </body>
 </html>

@@ -13,7 +13,7 @@ main {
 
   z-index: 1;
 
-  /* display: none; */
+  display: none;
 }
 
 .modal {
@@ -28,7 +28,7 @@ main {
 
   z-index: 2;
 
-  /* display: none; */
+  display: none;
 }
 
 .modal input {
