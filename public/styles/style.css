@@ -32,9 +32,31 @@ header .logo {
   color: #000;
 }
 
+/* Footer */
+footer {
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+footer .logo {
+  font-size: xx-large;
+  color: #000;
+  text-decoration: none;
+}
+
+footer p {
+  color: #777;
+}
+
+footer .copyright {
+  margin-top: 32px;
+  text-align: center;
+}
+
 /* Each Pages */
 main {
   padding-top: 16px;
+  padding-bottom: 64px;
 }
 
 main .title-bar {
