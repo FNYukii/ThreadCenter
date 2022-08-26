@@ -14,7 +14,11 @@
 
   <main>
     <div class="large-container">
-      <h2>Threads</h2>
+      <div class="title-bar">
+        <h2>Threads</h2>
+
+        <button>New Thread</button>
+      </div>
 
       <div class="thread-card-container">
         @foreach($threads as $thread)
