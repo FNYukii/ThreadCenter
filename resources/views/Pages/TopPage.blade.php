@@ -9,7 +9,9 @@
 </head>
 <body>
   
-  <h2>Threads</h2>
+  <div class="large-container">
+    <h2>Threads</h2>
+  </div>
   
 </body>
 </html>
