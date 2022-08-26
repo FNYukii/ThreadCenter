@@ -1,5 +1,17 @@
 .comment-container {
   margin-top: 16px;
   background-color: #fff;
-  padding: 16px;
+  padding: 32px;
+}
+
+.comment {
+  margin-bottom: 24px;
+}
+
+.comment .display-name {
+  font-weight: bold;
+}
+
+.comment .created-at {
+  color: #777;
 }

@@ -29,8 +29,8 @@
         @foreach($comments as $comment)
           <div class="comment">
             <p>
-              <span>{{ $comment->displayName}}</span>
-              <span>{{ $comment->created_at}}</span>
+              <span class="display-name">{{ $comment->displayName}}</span>
+              <span class="created-at">{{ $comment->created_at}}</span>
             </p>
             <p>{{ $comment->text }}</p>
           </div>
