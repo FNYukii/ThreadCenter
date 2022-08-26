@@ -9,13 +9,13 @@ class CreateThreadController extends Controller
 {
     public function __invoke(CreateThreadRequest $request)
     {
-        // Commentオブジェクトを生成
+        // Threadオブジェクトを生成
         $thread = new Thread();
 
         // FormRequestから入力された値を取得
         $thread->title = $request->title();
 
-        // 新規Commentをデータベースに保存
+        // 新規Threadをデータベースに保存
         $thread->save();
 
         // Topページを返す

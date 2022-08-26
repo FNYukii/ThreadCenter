@@ -16,12 +16,26 @@
     <div class="large-container">
 
       <!-- Add Comment Modal -->
+      <div class="modal-shadow" id="modalShadow"></div>
+      <div class="modal" id="modal">
+        <h3>New comment</h3>
+        <form action="{{ route('createComment') }}" method="post">
+          @csrf
+          <input type="hidden" name="threadId" value="{{ $thread->id }}"/>
+          <input placeholder="Display name" name="displayName"/>
+          <textarea placeholder="Text" name="text" rows="5"></textarea>
+
+          <div class="button-container">
+            <button type="submit">Add</button>
+          </div>
+        </form>
+      </div>
 
       <!-- Title Bar -->
       <div class="title-bar">
         <h2>{{ $thread->title }}</h2>
 
-        <button>New Comment</button>
+        <button id="openButton">New Comment</button>
       </div>
 
       <!-- Comments Section -->
@@ -41,5 +55,6 @@
 
   <x-footer/>
 
+  <script src="../scripts/Script.js"></script>
 </body>
 </html>

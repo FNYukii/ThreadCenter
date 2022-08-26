@@ -13,3 +13,6 @@ Route::post('/createThread', \App\Http\Controllers\CreateThreadController::class
 // Thread Page
 Route::get('/threads/{threadId}', \App\Http\Controllers\ThreadPageController::class)
 ->name('threadPage');
+
+Route::post('/createComment', \App\Http\Controllers\CreateCommentController::class)
+->name('createComment');
