@@ -19,8 +19,11 @@
       <div class="modal-shadow"></div>
       <div class="modal">
         <form>
-          <input placeholder="スレッドタイトル" name="title"/>
-          <button type="submit">Create</button>
+          <input placeholder="Thread title" name="title"/>
+
+          <div class="button-container">
+            <button type="submit">Create</button>
+          </div>
         </form>
       </div>
 
