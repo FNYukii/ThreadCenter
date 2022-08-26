@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comment;
 use App\Models\Thread;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,11 @@ class ThreadPageController extends Controller
         // 指定のThreadを取得
         $thread = Thread::where('id', $threadId)->firstOrFail();
 
+        // 指定のThreadに投稿されたCommentを全て取得
+        $comments = Comment::where('threadId', $thread->id)->orderBy('created_at', 'ASC')->get();
+
         return view('Pages.ThreadPage')
-        ->with('thread', $thread);
+        ->with('thread', $thread)
+        ->with('comments', $comments);
     }
 }

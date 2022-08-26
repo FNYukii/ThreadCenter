@@ -26,7 +26,15 @@
 
       <!-- Comments Section -->
       <div class="comment-container">
-
+        @foreach($comments as $comment)
+          <div class="comment">
+            <p>
+              <span class="display-name">{{ $comment->displayName}}</span>
+              <span class="created-at">{{ $comment->created_at}}</span>
+            </p>
+            <p>{{ $comment->text }}</p>
+          </div>
+        @endforeach
       </div>
     </div>
   </main>
