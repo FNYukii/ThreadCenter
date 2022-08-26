@@ -12,7 +12,9 @@
   <x-header/>
 
   <main>
-    <h2>Thread</h2>
+    <div class="large-container">
+      <h2>Thread</h2>
+    </div>
   </main>
 
   <x-footer/>
