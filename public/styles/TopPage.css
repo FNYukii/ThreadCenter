@@ -1,3 +1,38 @@
 main {
   background-color: #ddd;
 }
+
+/* Thread card container */
+.thread-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.thread-card {
+  width: 32%;
+  height: 170px;
+  margin-top: 16px;
+  background-color: #fff;
+  padding: 16px;
+}
+
+@media (max-width: 1100px) {
+  .thread-card {
+    width: 49%;
+  }
+}
+
+@media (max-width: 800px) {
+  .thread-card {
+    width: 100%;
+  }
+}
+
+.thread-card .title {
+  font-weight: bold;
+}
+
+.thread-card .created-at {
+  color: #777;
+}
