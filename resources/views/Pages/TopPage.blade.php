@@ -19,7 +19,8 @@
       <div class="modal-shadow" id="modalShadow"></div>
       <div class="modal" id="modal">
         <h3>New thread</h3>
-        <form>
+        <form action="{{ route('createThread') }}" method="post">
+          @csrf
           <input placeholder="Thread title" name="title"/>
 
           <div class="button-container">
@@ -44,6 +45,8 @@
             <p class="created-at">{{ $thread->created_at }}</p>
           </div>
         @endforeach
+
+        <div class="thread-card invisible"></div>
       </div>
       
     </div>
