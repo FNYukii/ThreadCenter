@@ -13,7 +13,12 @@
 
   <main>
     <div class="large-container">
-      <h2>{{ $thread->title }}</h2>
+
+      <div class="title-bar">
+        <h2>{{ $thread->title }}</h2>
+
+        <button>New Comment</button>
+      </div>
     </div>
   </main>
 
