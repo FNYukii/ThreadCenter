@@ -38,6 +38,12 @@ footer {
   padding-bottom: 16px;
 }
 
+@media (max-width: 800px) {
+  footer {
+    text-align: center;
+  }
+}
+
 footer .logo {
   font-size: xx-large;
   color: #000;
