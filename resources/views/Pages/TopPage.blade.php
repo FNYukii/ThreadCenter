@@ -33,7 +33,9 @@
       <div class="title-bar">
         <h2>Threads</h2>
 
-        <button id="openButton">New Thread</button>
+        <div>
+          <button id="openButton">New Thread</button>
+        </div>
       </div>
 
       <!-- Thread Card Container -->
