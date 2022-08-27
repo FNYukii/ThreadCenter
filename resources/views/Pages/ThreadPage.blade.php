@@ -51,6 +51,10 @@
             <p>{{ $comment->text }}</p>
           </div>
         @endforeach
+
+        @if (count($comments) === 0)
+        <p class="no-content-text">No content</p>
+        @endif
       </div>
     </div>
   </main>
