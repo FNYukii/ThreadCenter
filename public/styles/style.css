@@ -189,6 +189,8 @@ main .title-bar button {
   font-size: medium;
   padding: 4px;
   color: #000;
+
+  white-space: nowrap;
 }
 
 main .title-bar button:hover {
