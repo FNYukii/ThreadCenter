@@ -9,52 +9,61 @@
   <link rel="stylesheet" href="../styles/ThreadPage.css">
 </head>
 <body>
+
+  <div class="root">
+    <x-header/>
   
-  <x-header/>
-
-  <main>
-    <div class="large-container">
-
-      <!-- Add Comment Modal -->
-      <div class="modal-shadow" id="modalShadow"></div>
-      <div class="modal" id="modal">
-        <h3>New comment</h3>
-        <form action="{{ route('createComment') }}" method="post">
-          @csrf
-          <input type="hidden" name="threadId" value="{{ $thread->id }}"/>
-          <input placeholder="Display name" name="displayName" id="displayNameInput"/>
-          <textarea placeholder="Text" name="text" rows="5" id="textInput"></textarea>
-
-          <div class="button-container">
-            <button type="submit" id="submitButton" disabled>Add</button>
+    <main>
+      <div class="large-container">
+  
+        <!-- Add Comment Modal -->
+        <div class="modal-shadow" id="modalShadow"></div>
+        <div class="modal" id="modal">
+          <h3>New comment</h3>
+          <form action="{{ route('createComment') }}" method="post">
+            @csrf
+            <input type="hidden" name="threadId" value="{{ $thread->id }}"/>
+            <input placeholder="Display name" name="displayName" id="displayNameInput"/>
+            <textarea placeholder="Text" name="text" rows="5" id="textInput"></textarea>
+  
+            <div class="button-container">
+              <button type="submit" id="submitButton" disabled>Add</button>
+            </div>
+          </form>
+        </div>
+  
+        <!-- Title Bar -->
+        <div class="title-bar">
+          <h2>{{ $thread->title }}</h2>
+  
+          <div>
+            <button id="openButton">New Comment</button>
           </div>
-        </form>
+        </div>
+  
+        <!-- Comments Section -->
+        <div class="comment-container">
+          @foreach($comments as $comment)
+            <div class="comment">
+              <p>
+                <span class="display-name">{{ $comment->displayName}}</span>
+                <span class="created-at">{{ $comment->created_at}}</span>
+              </p>
+              <p>{{ $comment->text }}</p>
+            </div>
+          @endforeach
+  
+          @if (count($comments) === 0)
+          <p class="no-content-text">There is no comments yet</p>
+          @endif
+        </div>
       </div>
+    </main>
+  
+    <x-footer/>
 
-      <!-- Title Bar -->
-      <div class="title-bar">
-        <h2>{{ $thread->title }}</h2>
-
-        <button id="openButton">New Comment</button>
-      </div>
-
-      <!-- Comments Section -->
-      <div class="comment-container">
-        @foreach($comments as $comment)
-          <div class="comment">
-            <p>
-              <span class="display-name">{{ $comment->displayName}}</span>
-              <span class="created-at">{{ $comment->created_at}}</span>
-            </p>
-            <p>{{ $comment->text }}</p>
-          </div>
-        @endforeach
-      </div>
-    </div>
-  </main>
-
-  <x-footer/>
-
+  </div>
+  
   <script src="../scripts/Script.js"></script>
   <script src="../scripts/CheckCommentValues.js"></script>
 </body>

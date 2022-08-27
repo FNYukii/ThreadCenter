@@ -19,3 +19,7 @@
 .comment .created-at {
   color: #777;
 }
+
+.comment-container .no-content-text {
+  color: #777;
+}
