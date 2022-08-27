@@ -4,6 +4,6 @@
   <p class="created-at">{{ $thread->created_at }}</p>
 
   @if($firstComment != null)
-    <p>{{ $firstComment->text }}</p>
+    <p>{!! nl2br(e($firstComment->text)) !!}</p>
   @endif
 </div>
