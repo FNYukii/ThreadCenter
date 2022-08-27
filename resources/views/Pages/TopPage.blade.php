@@ -56,5 +56,6 @@
   <x-footer/>
 
   <script src="scripts/Script.js"></script>
+  <script src="scripts/CheckThreadValue.js"></script>
 </body>
 </html>
