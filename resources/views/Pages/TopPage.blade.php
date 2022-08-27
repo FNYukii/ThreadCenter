@@ -48,6 +48,10 @@
               <p class="created-at">{{ $thread->created_at }}</p>
             </div>
           @endforeach
+
+          @if(count($threads) === 0)
+            <p class="no-content-text">There is no threads yet</p>
+          @endif
   
           <div class="invisible-thread-card"></div>
         </div>

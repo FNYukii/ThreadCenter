@@ -54,7 +54,7 @@
           @endforeach
   
           @if (count($comments) === 0)
-          <p class="no-content-text">There is no comments yet</p>
+            <p class="no-content-text">There is no comments yet</p>
           @endif
         </div>
       </div>

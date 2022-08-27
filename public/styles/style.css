@@ -203,3 +203,7 @@ main .title-bar button {
 main .title-bar button:hover {
   opacity: 0.7;
 }
+
+main .no-content-text {
+  color: #777;
+}
