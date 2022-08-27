@@ -43,7 +43,7 @@
                 <span class="display-name">{{ $comment->displayName}}</span>
                 <span class="created-at">{{ $comment->created_at}}</span>
               </p>
-              <p>{{ $comment->text }}</p>
+              <p>{!! nl2br(e($comment->text)) !!}</p>
             </div>
           @endforeach
   
