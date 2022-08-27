@@ -46,7 +46,7 @@
           </div>
         @endforeach
 
-        <div class="thread-card invisible"></div>
+        <div class="invisible-thread-card"></div>
       </div>
       
     </div>
