@@ -26,7 +26,7 @@
           <textarea placeholder="Text" name="text" rows="5" id="textInput"></textarea>
 
           <div class="button-container">
-            <button type="submit" disabled>Add</button>
+            <button type="submit" id="submitButton" disabled>Add</button>
           </div>
         </form>
       </div>
@@ -56,5 +56,6 @@
   <x-footer/>
 
   <script src="../scripts/Script.js"></script>
+  <script src="../scripts/CheckCommentValues.js"></script>
 </body>
 </html>
