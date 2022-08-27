@@ -9,6 +9,7 @@ class ThreadCard extends Component
 {
     public $thread;
     public $firstComment;
+    public $commentCount;
 
     public function __construct($thread)
     {
@@ -17,8 +18,12 @@ class ThreadCard extends Component
 
     public function render()
     {
-        // 最初のCommentを取得する
+        // 最初のComment
         $this->firstComment = Comment::where('threadId', $this->thread->id)->orderBy('created_at', 'ASC')->first();
+        
+        // Commentの数
+        $this->commentCount = Comment::where('threadId', $this->thread->id)->count();
+
         return view('components.thread-card');
     }
 }

@@ -49,7 +49,7 @@
   -webkit-line-clamp: 3;
 }
 
-.thread-card .created-at {
+.thread-card .secondary {
   color: #777;
 }
 
