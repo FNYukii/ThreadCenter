@@ -36,11 +36,7 @@
         <!-- Thread Card Container -->
         <div class="thread-card-container">
           @foreach($threads as $thread)
-            <div class="thread-card">
-              <a href="/threads/{{ $thread->id }}"> </a>
-              <p class="title">{{ $thread->title}}</p>
-              <p class="created-at">{{ $thread->created_at }}</p>
-            </div>
+            <x-thread-card :thread="$thread"/>
           @endforeach
 
           @if(count($threads) === 0)
