@@ -1,9 +1,9 @@
-// Creation Modal Value Check
+// Add Comment Modal Value Check
 // Elements
-const threadTitleInput = document.getElementById('threadTitleInput');
+const titleInput = document.getElementById('titleInput');
 const submitButton = document.getElementById('submitButton');
 
-threadTitleInput.addEventListener('input', (event) => {
+titleInput.addEventListener('input', (event) => {
   const title = event.currentTarget.value;
 
   if(title !== "" && title.length <= 140) {

@@ -21,7 +21,7 @@
         <h3>New thread</h3>
         <form action="{{ route('createThread') }}" method="post">
           @csrf
-          <input placeholder="Title" name="title" id="threadTitleInput"/>
+          <input placeholder="Title" name="title" id="titleInput"/>
 
           <div class="button-container">
             <button type="submit" id="submitButton" disabled>Create</button>
