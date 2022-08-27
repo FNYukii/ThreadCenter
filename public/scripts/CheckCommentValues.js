@@ -1,21 +1,17 @@
 // Add Comment Modal Value Check
 // Elements
 const displayNameInput = document.getElementById('displayNameInput');
-displayNameInput.addEventListener('input', (event) => {
-  check()
-});
-
 const textInput = document.getElementById('textInput');
-textInput.addEventListener('input', (event) => {
-  check();
-});
+const submitButton = document.getElementById('submitButton');
+
+// 値が入力されたらCheck
+displayNameInput.addEventListener('input', check);
+textInput.addEventListener('input', check);
 
 function check() {
   const displayName = displayNameInput.value;
   const text = textInput.value;
   
-  const submitButton = document.getElementById('submitButton');
-
   if (displayName !== "" && displayName.length <= 50 && text !== "" && text.length <= 500) {
     submitButton.disabled = false;
   } else {
