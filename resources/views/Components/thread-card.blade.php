@@ -3,7 +3,7 @@
   <p class="title">{{ $thread->title}}</p>
 
   @if($firstComment != null)
-    <p>{!! nl2br(e($firstComment->text)) !!}</p>
+    <p class="text">{!! nl2br(e($firstComment->text)) !!}</p>
   @endif
 
   <p class="secondary">{{ $commentCount }} Comments</p>
