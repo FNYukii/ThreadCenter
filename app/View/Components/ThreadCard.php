@@ -18,8 +18,7 @@ class ThreadCard extends Component
     public function render()
     {
         // 最初のCommentを取得する
-        // TODO: Commentが一件もない場合エラーが起こる
-        $this->firstComment = Comment::where('threadId', $this->thread->id)->orderBy('created_at', 'ASC')->firstOrFail();
+        $this->firstComment = Comment::where('threadId', $this->thread->id)->orderBy('created_at', 'ASC')->first();
         return view('components.thread-card');
     }
 }
