@@ -4,23 +4,17 @@ Laravelを用いて開発した、簡単な掲示板アプリ。スレッドや�
 
 ## 使用技術
 - PHP 8.1.8
-- Composer 2.3.10
 - Laravel 9.22.1
 - MySQL 8.0.30
 
 ## 環境構築
-1. PHP・Composer・Laravel・MySQLがインストールされていることを確認
+1. PHP・Laravel・MySQLがインストールされていることを確認
     ```
     $ php -v
     PHP 8.1.8 (cli) (built: Jul  8 2022 10:46:35) (NTS)
     Copyright (c) The PHP Group
     Zend Engine v4.1.8, Copyright (c) Zend Technologies
         with Zend OPcache v8.1.8, Copyright (c), by Zend Technologies
-    ```
-
-    ```
-    $ composer --version
-    Composer version 2.3.10 2022-07-13 15:48:23
     ```
 
     ```
