@@ -9,12 +9,12 @@ displayNameInput.addEventListener('input', check);
 textInput.addEventListener('input', check);
 
 function check() {
-  const displayName = displayNameInput.value;
-  const text = textInput.value;
-  
-  if (displayName !== "" && displayName.length <= 50 && text !== "" && text.length <= 500) {
-    submitButton.disabled = false;
-  } else {
-    submitButton.disabled = true;
-  }
+    const displayName = displayNameInput.value;
+    const text = textInput.value;
+
+    if (displayName !== "" && displayName.length <= 50 && text !== "" && text.length <= 500) {
+        submitButton.disabled = false;
+    } else {
+        submitButton.disabled = true;
+    }
 }

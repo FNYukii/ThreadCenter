@@ -1,21 +1,21 @@
 .comment-container {
-  margin-top: 16px;
-  background-color: #fff;
-  padding: 32px;
+    margin-top: 16px;
+    background-color: #fff;
+    padding: 32px;
 }
 
 .comment {
-  margin-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 .comment:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .comment .display-name {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .comment .created-at {
-  color: #777;
+    color: #777;
 }
