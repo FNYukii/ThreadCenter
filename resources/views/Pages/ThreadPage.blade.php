@@ -35,7 +35,9 @@
       <div class="title-bar">
         <h2>{{ $thread->title }}</h2>
 
-        <button id="openButton">New Comment</button>
+        <div>
+          <button id="openButton">New Comment</button>
+        </div>
       </div>
 
       <!-- Comments Section -->
