@@ -21,10 +21,10 @@
         <h3>New thread</h3>
         <form action="{{ route('createThread') }}" method="post">
           @csrf
-          <input placeholder="Title" name="title"/>
+          <input placeholder="Title" name="title" id="titleInput"/>
 
           <div class="button-container">
-            <button type="submit">Create</button>
+            <button type="submit" id="submitButton" disabled>Create</button>
           </div>
         </form>
       </div>
@@ -56,5 +56,6 @@
   <x-footer/>
 
   <script src="scripts/Script.js"></script>
+  <script src="scripts/CheckThreadValue.js"></script>
 </body>
 </html>

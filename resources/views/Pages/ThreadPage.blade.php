@@ -22,11 +22,11 @@
         <form action="{{ route('createComment') }}" method="post">
           @csrf
           <input type="hidden" name="threadId" value="{{ $thread->id }}"/>
-          <input placeholder="Display name" name="displayName"/>
-          <textarea placeholder="Text" name="text" rows="5"></textarea>
+          <input placeholder="Display name" name="displayName" id="displayNameInput"/>
+          <textarea placeholder="Text" name="text" rows="5" id="textInput"></textarea>
 
           <div class="button-container">
-            <button type="submit">Add</button>
+            <button type="submit" id="submitButton" disabled>Add</button>
           </div>
         </form>
       </div>
@@ -56,5 +56,6 @@
   <x-footer/>
 
   <script src="../scripts/Script.js"></script>
+  <script src="../scripts/CheckCommentValues.js"></script>
 </body>
 </html>

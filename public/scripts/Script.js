@@ -1,3 +1,5 @@
+// Creation Modal Switch
+// Elements
 const modalShadow = document.getElementById('modalShadow');
 const modal = document.getElementById('modal');
 
