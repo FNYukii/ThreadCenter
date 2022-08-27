@@ -155,7 +155,7 @@ main {
 }
 
 .modal button:disabled {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 /* Title Bar */
