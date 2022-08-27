@@ -27,14 +27,14 @@ $ mysql --version
 mysql  Ver 8.0.30 for macos12.4 on arm64 (Homebrew)
 ```
 
-1. MySQLにデータベースを作成する
+2. MySQLにデータベースを作成する
 ```
 $ mysql -u root -p
 Enter password:
 mysql> create database ThreadCenter;
 ```
 
-1. `.env`ファイルを編集する
+3. `.env`ファイルを編集する
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -48,17 +48,17 @@ DB_PASSWORD=secret # 設定したパスワード
 $ php artisan cache:clear
 ```
 
-1. Migrationを実行し、必要なテーブルを作成する
+4. Migrationを実行し、必要なテーブルを作成する
 ```
 $ php artisan migrate
 ```
 
-1. テストデータを入れたいならSeedingを実行する(任意)
+5. テストデータを入れたいならSeedingを実行する(任意)
 ```
 $ php artisan db:seed
 ```
 
-1. 開発サーバーを起動して動作確認
+6. 開発サーバーを起動して動作確認
 ```
 $ php artisan serve
 ```
