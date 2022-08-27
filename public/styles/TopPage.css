@@ -50,7 +50,5 @@
 
 .invisible-thread-card {
   width: 32%;
-  height: 170px;
-  margin-bottom: 16px;
   opacity: 0;
 }
