@@ -31,7 +31,7 @@
         </div>
   
         <!-- Title Bar -->
-        <x-title-bar/>
+        <x-title-bar>Threads</x-title-bar>
   
         <!-- Thread Card Container -->
         <div class="thread-card-container">

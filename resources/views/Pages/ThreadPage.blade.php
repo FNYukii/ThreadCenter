@@ -33,7 +33,7 @@
         </div>
   
         <!-- Title Bar -->
-        <x-title-bar/>
+        <x-title-bar>{{ $thread->title }}</x-title-bar>
   
         <!-- Comments Section -->
         <div class="comment-container">

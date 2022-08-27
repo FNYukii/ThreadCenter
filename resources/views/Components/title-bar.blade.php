@@ -1,5 +1,5 @@
 <div class="title-bar">
-  <h2>title title</h2>
+  <h2>{{ $slot }}</h2>
 
   <div>
     <button id="openButton">New Thread</button>
