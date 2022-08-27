@@ -175,6 +175,12 @@ main .title-bar {
   justify-content: space-between;
 }
 
+main .title-bar h2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
 main .title-bar button {
   background-color: transparent;
   border: none;
