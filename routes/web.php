@@ -28,6 +28,7 @@ Route::get('/', \App\Http\Controllers\TopPageController::class)
 ->name('topPage');
 
 Route::post('/createThread', \App\Http\Controllers\CreateThreadController::class)
+->middleware('auth')
 ->name('createThread');
 
 // Thread Page
@@ -35,8 +36,10 @@ Route::get('/threads/{threadId}', \App\Http\Controllers\ThreadPageController::cl
 ->name('threadPage');
 
 Route::post('/createComment', \App\Http\Controllers\CreateCommentController::class)
+->middleware('auth')
 ->name('createComment');
 
 // Account Page
 Route::get('/account', \App\Http\Controllers\AccountPageController::class)
+->middleware('auth')
 ->name('accountPage');
