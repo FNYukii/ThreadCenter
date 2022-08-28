@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use App\Models\Thread;
 use Illuminate\Database\Seeder;
 
-class ThreadSeeder extends Seeder
+class ThreadsSeeder extends Seeder
 {
     public function run()
     {
