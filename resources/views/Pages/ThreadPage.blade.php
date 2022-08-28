@@ -35,7 +35,15 @@
                 </div>
 
                 <!-- Title Bar -->
-                <x-title-bar :title="$thread->title" :buttonText="'New Comment'"/>
+                <div class="title-bar">
+                    <h2>{{ $thread->title }}</h2>
+
+                    <div>
+                        @auth
+                        <button id="openButton">New Comment</button>
+                        @endauth
+                    </div>
+                </div>
 
                 <!-- Comments Section -->
                 <div class="comment-container">
