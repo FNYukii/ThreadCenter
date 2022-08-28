@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account - Thread Center</title>
     <link rel="stylesheet" href="styles/Style.css">
+    <link rel="stylesheet" href="styles/AccountPage.css">
 </head>
 <body>
 
@@ -15,13 +16,18 @@
         <main>
             <div class="large-container">
                 <!-- Title Bar -->
-                <x-title-bar :title="'Account'" :buttonText="'hello'"/>
+                <div class="title-bar">
+                    <h2>Account</h2>
+                </div>
 
-                <form method="post" action="{{ route('logout') }}">
-                    @csrf
-                    <button onclick="event.preventDefault(); this.closest('form').submit();">Log out</button>
-                </form>
-
+                <div class="detail-container">
+                    <p>Name: Hello Man</p>
+                    <p>Email: hello@gmail.com</p>
+                    <form method="post" action="{{ route('logout') }}">
+                        @csrf
+                        <button onclick="event.preventDefault(); this.closest('form').submit();">Log out</button>
+                    </form>
+                </div>
             </div>
 
         </main>

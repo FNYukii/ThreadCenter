@@ -5,7 +5,7 @@
         <ul>
             @auth
             <li>
-                <a href="{{ route('accountPage') }}">Account</a>
+                <a href="{{ route('accountPage') }}">{{ Auth::user()->name }}</a>
             </li>
             
             @else
