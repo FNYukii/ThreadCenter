@@ -21,8 +21,8 @@
                 </div>
 
                 <div class="detail-container">
-                    <p>Name: Hello Man</p>
-                    <p>Email: hello@gmail.com</p>
+                    <p>Name: {{ Auth::user()->name }}</p>
+                    <p>Email: {{ Auth::user()->email }}</p>
                     <form method="post" action="{{ route('logout') }}">
                         @csrf
                         <button onclick="event.preventDefault(); this.closest('form').submit();">Log out</button>
