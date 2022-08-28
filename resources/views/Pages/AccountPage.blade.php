@@ -17,10 +17,10 @@
                 <!-- Title Bar -->
                 <x-title-bar :title="'Account'" :buttonText="'hello'"/>
 
-                <!-- Thread Card Container -->
-                <div class="thread-card-container">
-                    
-                </div>
+                <form method="post" action="{{ route('logout') }}">
+                    @csrf
+                    <button onclick="event.preventDefault(); this.closest('form').submit();">Log out</button>
+                </form>
 
             </div>
 
