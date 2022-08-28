@@ -10,7 +10,7 @@ class CommentFactory extends Factory
     {
         return [
             'user_id' => 1,
-            'threadId' => 99,
+            'threadId' => 1,
             'displayName' => $this->faker->name(1),
             'text' => $this->faker->sentence(10)
         ];
