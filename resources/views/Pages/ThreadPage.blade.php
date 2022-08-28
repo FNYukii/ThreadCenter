@@ -35,7 +35,7 @@
                 </div>
 
                 <!-- Title Bar -->
-                <x-title-bar>{{ $thread->title }}</x-title-bar>
+                <x-title-bar :title="$thread->title" :buttonText="'New Comment'"/>
 
                 <!-- Comments Section -->
                 <div class="comment-container">

@@ -33,7 +33,7 @@
                 </div>
 
                 <!-- Title Bar -->
-                <x-title-bar>Threads</x-title-bar>
+                <x-title-bar :title="'Threads'" :buttonText="'New Thread'"/>
 
                 <!-- Thread Card Container -->
                 <div class="thread-card-container">

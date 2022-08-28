@@ -1,7 +1,7 @@
 <div class="title-bar">
-    <h2>{{ $slot }}</h2>
+    <h2>{{ $title }}</h2>
 
     <div>
-        <button id="openButton">New Thread</button>
+        <button id="openButton">{{ $buttonText }}</button>
     </div>
 </div>
