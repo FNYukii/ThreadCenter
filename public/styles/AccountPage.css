@@ -3,3 +3,7 @@
     background-color: #fff;
     padding: 32px;
 }
+
+.detail-container span {
+    color: #777;
+}
