@@ -33,7 +33,15 @@
                 </div>
 
                 <!-- Title Bar -->
-                <x-title-bar :title="'Threads'" :buttonText="'New Thread'"/>
+                <div class="title-bar">
+                    <h2>Threads</h2>
+
+                    <div>
+                        @auth
+                        <button id="openButton">New Thread</button>
+                        @endauth
+                    </div>
+                </div>
 
                 <!-- Thread Card Container -->
                 <div class="thread-card-container">
