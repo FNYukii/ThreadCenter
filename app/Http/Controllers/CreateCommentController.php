@@ -13,6 +13,7 @@ class CreateCommentController extends Controller
         $comment = new Comment();
 
         // 入力された値を取得
+        $comment->user_id = $request->userId();
         $threadId = $request->threadId();
         $comment->threadId = $threadId;
         $comment->displayName = $request->displayName();
