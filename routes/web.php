@@ -36,3 +36,7 @@ Route::get('/threads/{threadId}', \App\Http\Controllers\ThreadPageController::cl
 
 Route::post('/createComment', \App\Http\Controllers\CreateCommentController::class)
 ->name('createComment');
+
+// Account Page
+Route::get('/account', \App\Http\Controllers\AccountPageController::class)
+->name('accountPage');
