@@ -9,7 +9,8 @@ class CommentFactory extends Factory
     public function definition()
     {
         return [
-            'threadId' => 99,
+            'user_id' => 1,
+            'threadId' => 1,
             'displayName' => $this->faker->name(1),
             'text' => $this->faker->sentence(10)
         ];

@@ -25,7 +25,7 @@
                     <form action="{{ route('createComment') }}" method="post">
                         @csrf
                         <input type="hidden" name="threadId" value="{{ $thread->id }}" />
-                        <input placeholder="Display name" name="displayName" id="displayNameInput" />
+                        <input value="Display name" name="displayName" id="displayNameInput" type="hidden"/>
                         <textarea placeholder="Text" name="text" rows="5" id="textInput"></textarea>
 
                         <div class="button-container">
@@ -42,7 +42,7 @@
                     @foreach($comments as $comment)
                     <div class="comment">
                         <p>
-                            <span class="display-name">{{ $comment->displayName}}</span>
+                            <span class="display-name">{{ $comment->user->name}}</span>
                             <span class="created-at">{{ $comment->created_at}}</span>
                         </p>
                         <p>{!! nl2br(e($comment->text)) !!}</p>

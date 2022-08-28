@@ -20,6 +20,11 @@ class CreateCommentRequest extends FormRequest
         ];
     }
 
+    public function userId(): int
+    {
+        return $this->user()->id;
+    }
+
     public function threadId(): string
     {
         return $this->input('threadId');

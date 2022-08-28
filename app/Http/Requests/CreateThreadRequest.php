@@ -18,6 +18,11 @@ class CreateThreadRequest extends FormRequest
         ];
     }
 
+    public function userId(): int
+    {
+        return $this->user()->id;
+    }
+
     public function title(): string
     {
         // Formに入力された値を返す

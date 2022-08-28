@@ -13,6 +13,7 @@ class CreateThreadController extends Controller
         $thread = new Thread();
 
         // FormRequestから入力された値を取得
+        $thread->user_id = $request->userId();
         $thread->title = $request->title();
 
         // 新規Threadをデータベースに保存
