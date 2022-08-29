@@ -31,7 +31,7 @@ mysql  Ver 8.0.30 for macos12.4 on arm64 (Homebrew)
 ```
 $ mysql -u root -p
 Enter password:
-mysql> create database ThreadCenter;
+mysql> create database thread_center;
 ```
 
 3. `.env`ファイルを編集
@@ -39,7 +39,7 @@ mysql> create database ThreadCenter;
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=HelloLaravel # 作成したデータベース名
+DB_DATABASE=thread_center # 作成したデータベース名
 DB_USERNAME=root
 DB_PASSWORD=secret # 設定したパスワード
 ```
