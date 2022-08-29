@@ -41,7 +41,7 @@ DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=thread_center # 作成したデータベース名
 DB_USERNAME=root
-DB_PASSWORD=secret # 設定したパスワード
+DB_PASSWORD=secret # MySQLのパスワード
 ```
 
 ```
