@@ -13,7 +13,7 @@
 <body>
 
     <div class="root">
-        <x-header />
+        <x-header/>
 
         <main>
             <div class="large-container">
@@ -60,7 +60,7 @@
 
         </main>
 
-        <x-footer />
+        <x-footer/>
 
     </div>
 

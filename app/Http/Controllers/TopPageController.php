@@ -13,7 +13,7 @@ class TopPageController extends Controller
         $threads = Thread::orderBy('created_at', 'DESC')->get();
 
         // Bladeを返す
-        return view('Pages.TopPage')
+        return view('pages.top_page')
         ->with('threads', $threads);
     }
 }

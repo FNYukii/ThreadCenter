@@ -19,7 +19,7 @@ class ThreadPageController extends Controller
         // 指定のThreadに投稿されたCommentを全て取得
         $comments = Comment::where('thread_id', $thread->id)->orderBy('created_at', 'ASC')->get();
 
-        return view('Pages.ThreadPage')
+        return view('pages.thread_page')
         ->with('thread', $thread)
         ->with('comments', $comments);
     }
