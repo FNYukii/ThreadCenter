@@ -19,10 +19,10 @@ class ThreadCard extends Component
     public function render()
     {
         // 最初のComment
-        $this->firstComment = Comment::where('threadId', $this->thread->id)->orderBy('created_at', 'ASC')->first();
+        $this->firstComment = Comment::where('thread_id', $this->thread->id)->orderBy('created_at', 'ASC')->first();
         
         // Commentの数
-        $this->commentCount = Comment::where('threadId', $this->thread->id)->count();
+        $this->commentCount = Comment::where('thread_id', $this->thread->id)->count();
 
         return view('components.thread-card');
     }
