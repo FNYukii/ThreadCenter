@@ -35,7 +35,7 @@ Enter password:
 mysql> create database thread_center;
 ```
 
-3. `.env`ファイルを編集
+3. `.env`ファイルを編集し、キャッシュクリアして変更を反映
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
