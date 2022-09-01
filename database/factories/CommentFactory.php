@@ -10,7 +10,7 @@ class CommentFactory extends Factory
     {
         return [
             'user_id' => 1,
-            'thread_id' => 1,
+            'thread_id' => rand(1, 10),
             'text' => $this->faker->sentence(10)
         ];
     }
