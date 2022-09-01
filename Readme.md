@@ -2,6 +2,13 @@
 ## 概要
 Laravelを用いて開発した、アカウント制の掲示板アプリ。スレッドやコメントを作成・閲覧できる。
 
+## スクリーンショット
+<img width="1440" alt="スクリーンショット 2022-09-01 17 09 36" src="https://user-images.githubusercontent.com/65577595/187865402-3f5f6e33-d3e2-42f3-ab02-75304704a3ba.png">
+<img width="1440" alt="スクリーンショット 2022-09-01 17 09 44" src="https://user-images.githubusercontent.com/65577595/187865459-e2819e61-25bf-4eff-9f7b-51f19f7312b8.png">
+<img width="1440" alt="スクリーンショット 2022-09-01 17 09 51" src="https://user-images.githubusercontent.com/65577595/187865477-f21fab9c-a17f-4dd2-a1de-1ce414c1d7d0.png">
+<img width="1440" alt="スクリーンショット 2022-09-01 17 10 08" src="https://user-images.githubusercontent.com/65577595/187865503-ebefbee3-0ede-4c3a-8d3d-3ec87b1af6b8.png">
+
+
 ## 使用技術
 - PHP 8.1.8
 - Composer 2.3.10
