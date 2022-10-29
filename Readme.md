@@ -5,6 +5,7 @@ Laravelを用いて開発した、アカウント制の掲示板アプリ。ス�
 ## 主な使用技術
 - PHP 8
 - Laravel 9
+- MySQL 8
 
 ## スクリーンショット
 <img width="1440" alt="スクリーンショット 2022-09-01 17 09 36" src="https://user-images.githubusercontent.com/65577595/187865402-3f5f6e33-d3e2-42f3-ab02-75304704a3ba.png">
